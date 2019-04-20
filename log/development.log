@@ -755,3 +755,10 @@ Processing by ArtistsController#index as HTML
 Completed 200 OK in 132ms (Views: 126.6ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/songs" for 70.181.15.78 at 2019-04-20 19:30:02 +0000
+Cannot render console from 70.181.15.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+Redirected to http://142.93.11.41:60012/artists
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
