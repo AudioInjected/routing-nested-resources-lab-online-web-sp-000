@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
     if !params[:artist_id]
-      redirect_to songs_path
+      render 'songs/index'
     elsif params[:artist_id].to_i > 0
       @songs = Artist.find(params[:artist_id]).songs
     else 
