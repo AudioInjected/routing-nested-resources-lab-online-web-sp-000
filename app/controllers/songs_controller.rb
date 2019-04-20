@@ -1,7 +1,6 @@
 class SongsController < ApplicationController
   def index
     if params[:artist_id].to_i > 0
-      binding.pry
       @songs = Artist.find(params[:artist_id]).songs
     else 
       flash[:notice] = "Artist not found"
